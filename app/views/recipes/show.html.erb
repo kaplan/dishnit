@@ -1,7 +1,9 @@
+<div class="container">
+<div class="recipe-detail">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <%= image_tag @recipe.photo_url  %>
+  <%= image_tag @recipe.photo_url, :class => 'recipe-picture' %>
 </p>
 
 <p>
@@ -24,7 +26,9 @@
   <%= @recipe.directions %>
 </p>
 
-<%= @recipe.cookbook_id %>
+</div>
+<footer></footer>
+</div>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', cookbook_url(@recipe.cookbook_id) %>
