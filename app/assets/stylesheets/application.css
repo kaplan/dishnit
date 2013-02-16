@@ -11,51 +11,124 @@
  *= require_self
  *= require_tree .
  */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+
+/*custom styles*/
+
 body {
-  line-height: 1;
+
+  background: -webkit-linear-gradient(top, #67A61B, #050505);
+     background: -moz-linear-gradient(top, #67A61B, #050505);
+      background: -ms-linear-gradient(top, #67A61B, #050505);
+       background: -o-linear-gradient(top, #67A61B, #050505);
+          background: linear-gradient(top, #67A61B, #050505);
 }
-ol, ul {
-  list-style: none;
+
+.container {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+  margin: 0 auto;
+  width: 1050px;
+  height:100%;
+  border: 3px solid orange;
+  background: url("dishes.jpg")0 100% no-repeat;
+  background-size:cover;
+  /*background: -webkit-linear-gradient(top, #120275, #050505);
+     background: -moz-linear-gradient(top, #120275, #050505);
+      background: -ms-linear-gradient(top, #120275, #050505);
+       background: -o-linear-gradient(top, #120275, #050505);
+          background: linear-gradient(top, #120275, #050505);*/
 }
-blockquote, q {
-  quotes: none;
+
+h1 {
+  background-color: black;
+  color: orange;
+  padding: 30px;
+  border-bottom:3px solid orange;
+  font-size: 60px;
+  text-align: center;
+
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+
+/*h1 span {
+  float: right;
+  background-color: black;
+  color: orange;
+  padding-top: 1px;
+  padding-right:1px;
+  font-size: 14px;
+
+}*/
+
+.recipe-pics {
+  border:3px solid black;
+  width:700px;
+  height:250px;
+  margin: 40px auto;
+  padding-top: 30px;
+  background-color: black;
+  color:orange;
+  text-align: center;
+  font-size: 30px
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+nav ul {
+  color: orange;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 20px;
+  background-color: black;
+
 }
+
+li {
+  font: 1em "Copperplate", sans-serif;
+  display: inline;
+  padding:15px;
+}
+
+li a:link, li a:hover, li a:visited, li a:active, a {
+  font: 1em "Copperplate", sans-serif;
+  color: orange;
+  text-decoration: none;
+}
+
+h2 {
+  background-color: black;
+  color: orange;
+  padding: 20px;
+  /*border:3px solid orange;*/
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.recipe-list ul li{
+  display: list-item;
+  padding: 5px;
+  color: orange;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+}
+
+.recipe-list {
+  width: 700px;
+  margin: 0 auto;
+  /*text-align: center;*/
+  padding:20px;
+  background: -webkit-radial-gradient(center, #67A61B, #050505);
+     background: -moz-radial-gradient(center, #67A61B, #050505);
+      background: -ms-radial-gradient(center, #67A61B, #050505);
+       background: -o-radial-gradient(center, #67A61B, #050505);
+          background: radial-gradient(center, #67A61B, #050505);
+}
+
+}
+
+
+
+
+
+
+=======
+>>>>>>> bdc1e05ba9876e210abd26b8c2a8c1d6a8d0f07e

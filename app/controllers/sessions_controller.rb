@@ -8,6 +8,7 @@ def create
   if @user.present?
     session[:user_id] = @user.id
     redirect_to home_url, :notice => "You are logged in as #{@user.username}"
+
   else
     redirect_to '/sessions/new', :notice => "You are not logged in, try again"
   end
