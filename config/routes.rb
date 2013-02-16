@@ -2,7 +2,7 @@ Dishinit::Application.routes.draw do
 
   root :to => 'Home#index'
 
-  get "/dishinit" => 'Home#index'
+  get "/dishnit" => 'Home#index', as: "home"
 
 
   resources :catalogs
