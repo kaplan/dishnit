@@ -1,8 +1,9 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
-<p>
+<h2>
   <b>Cookbook:</b>
   <%= @cookbook.name %>
-</p>
+</h2>
 
 <%= link_to 'Add a New Recipe', new_recipe_url %>
 <% @cookbook.recipes.each do |recipe| %>
@@ -12,4 +13,5 @@
     <td> <%= recipe.description %> </td>
   </table>
 <% end %>
+</div>
 
