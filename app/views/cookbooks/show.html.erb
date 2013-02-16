@@ -5,13 +5,18 @@
   <%= @cookbook.name %>
 </h2>
 
-<%= link_to 'Add a New Recipe', new_recipe_url %>
+<center><%= link_to 'Add a New Recipe', new_recipe_url, :class => "new-recipe" %></center>
+
 <% @cookbook.recipes.each do |recipe| %>
-  <table>
+  <table class="recipe-detail">
     <td> <%= image_tag recipe.photo_url, :width => "200" %> </td>
     <td> <%= link_to recipe.name, recipe_url(recipe.id) %> </td>
     <td> <%= recipe.description %> </td>
   </table>
 <% end %>
+
+
+<footer></footer>
 </div>
+
 

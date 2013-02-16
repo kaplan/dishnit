@@ -1,6 +1,8 @@
-<h1>Editing recipe</h1>
+<div class="container">
+<h2>Editing recipe</h2>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @recipe %> |
-<%= link_to 'Back', recipes_path %>
+<%= link_to 'Back', cookbook_url(@recipe.cookbook_id) %>
+</div>

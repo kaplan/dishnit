@@ -1,12 +1,15 @@
 <div class="container">
 <!-- <h1>Welcome to DishnIt</h1> -->
 <% if @cookbook.present? %>
+ <div class="recipe-detail">
   <ul>
-    <li>Your Cookbooks</li><br>
+    <li class="cookbooks">Your Cookbooks</li><br>
+    <li></li><br />
     <li><%= link_to @cookbook.name, cookbook_url(@cookbook.id) %></li>
   </ul>
 
 <% end %>
+</div>
 <footer></footer>
 </div>
 
