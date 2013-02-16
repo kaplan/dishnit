@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Cookbook:</b>
+  <%= @cookbook.name %>
+</p>
+
+<%= link_to 'Add a New Recipe', new_recipe_url %>
+<% @cookbook.recipes.each do |recipe| %>
+  <table>
+    <td> <%= image_tag recipe.photo_url, :width => "200" %> </td>
+    <td> <%= link_to recipe.name, recipe_url(recipe.id) %> </td>
+    <td> <%= recipe.description %> </td>
+  </table>
+<% end %>
+
