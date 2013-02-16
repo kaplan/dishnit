@@ -1,12 +1,11 @@
 <div class="container">
-<h1>Welcome to DishnIt</h1>
+<!-- <h1>Welcome to DishnIt</h1> -->
 <% if @cookbook.present? %>
   <ul>
     <li>Your Cookbooks</li><br>
     <li><%= link_to @cookbook.name, cookbook_url(@cookbook.id) %></li>
   </ul>
-  <% else %>
-    <%= link_to "Make a new cookbook", new_cookbook_url %>
+
 <% end %>
 <footer></footer>
 </div>
