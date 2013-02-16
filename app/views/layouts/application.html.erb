@@ -8,7 +8,12 @@
 </head>
 <body>
 
-<h1>Dish&rsquo;n It</h1>
+<% if session[:user_id].present? %>
+  <h1>Dish&rsquo;n It</h1>
+<% else %>
+  <h1>Welcome to Dish&rsquo;n It</h1>
+<% end %>
+
 
 <nav>
   <ul>
