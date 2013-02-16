@@ -40,14 +40,20 @@ body {
           background: linear-gradient(top, #120275, #050505);*/
 }
 
+/*.title {
+  background: #000;
+  width: 100%;
+}*/
+
 h1 {
   background-color: black;
   color: orange;
-  padding: 30px;
-  border-bottom:3px solid orange;
+  padding: 0px;
+  border:3px solid orange;
   font-size: 60px;
+  font-family: "Copperplate", sans-serif;
   text-align: center;
-
+  width: 100%;
 }
 
 /*h1 span {
@@ -72,13 +78,38 @@ h1 {
   font-size: 30px
 }
 
-nav ul {
-  color: orange;
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 20px;
-  background-color: black;
+.recipe-picture {
+  display: block;
+  margin: 0 auto;
 
+}
+
+.recipe-detail {
+  margin: 10px auto;
+  padding: 20px;
+  width: 50%;
+  color: orange;
+  background-color: black;
+  font: 1em "Copperplate", sans-serif;
+  border:3px solid orange;
+}
+
+nav {
+  color: orange;
+ /* padding-left: 300px;
+  padding-right: 300px;*/
+  width: 1010px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  border-top:3px solid orange;
+  border-right:3px solid orange;
+  border-left:3px solid orange;
+}
+
+ul {
+  width: 60%;
+  margin: 0 auto;
 }
 
 li {
@@ -123,12 +154,8 @@ h2 {
           background: radial-gradient(center, #67A61B, #050505);
 }
 
+footer {
+  width: 1050px;
+  height: 12px;
+  background-color: black;
 }
-
-
-
-
-
-
-=======
->>>>>>> bdc1e05ba9876e210abd26b8c2a8c1d6a8d0f07e
