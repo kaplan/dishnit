@@ -1,7 +1,6 @@
 <div class="recipe-detail">
-    <div class="backbutton">
-  <%= link_to 'Back', cookbook_url(@recipe.cookbook_id) %>
-</div>
+  <%# I put this in the recipes_controller: @cookbook = Cookbook.find_by_user_id(session[:user_id]).id %>
+  <div class="backbutton"><%= link_to 'Back', cookbook_url(@cookbook) %></div>
 
 <%= form_for(@recipe) do |f| %>
   <% if @recipe.errors.any? %>

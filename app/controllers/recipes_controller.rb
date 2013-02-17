@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new.json
   def new
     @recipe = Recipe.new
+    @cookbook = Cookbook.find_by_user_id(session[:user_id]).id
 
     respond_to do |format|
       format.html # new.html.erb

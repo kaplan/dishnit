@@ -2,19 +2,18 @@
 <div class="container">
 <!-- <h1>Welcome to DishnIt</h1> -->
 
-<% if @cookbook.present? %>
- <div class="recipe-detail">
-  <ul>
-    <li class="cookbooks">Your Cookbooks</li><br>
-    <li></li><br />
-    <li><%= link_to @cookbook.name, cookbook_url(@cookbook.id) %></li>
-  </ul>
+  <%= @cookbook %>
+  <% if @cookbook.present? %>
+   <div class="recipe-detail">
+    <ul>
+      <li class="cookbooks">Your Cookbooks</li><br>
+      <li></li><br />
+      <li><%= link_to @cookbook.name, cookbook_url(@cookbook.id) %></li>
+    </ul>
+  <% end %>
+  </div>
+  <div><center><img class="recipe-picture recipe-detail" src="http://workalicio.us/tsl-webdev/dishnit/manicotti.jpg" /></center></div>
 
-<% end %>
-</div>
-<div>
-  <center><img class="recipe-picture recipe-detail" src="http://workalicio.us/tsl-webdev/dishnit/manicotti.jpg" /></center>
-</div>
 <footer></footer>
 </div>
 
