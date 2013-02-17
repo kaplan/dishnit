@@ -5,6 +5,20 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <style>
+    #slideshow {
+      position: relative;
+    }
+    #slideshow div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /*outline: 1px dotted #834d9a;*/
+      /*background-color: #efefef;*/
+    }
+  </style>
+
 </head>
 <body>
 
@@ -29,6 +43,8 @@
   </ul>
 </nav>
 <% notice %>
+
+
 <%= yield %>
 
 </body>
